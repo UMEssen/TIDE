@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+
+# TIDE-IG SUSHI build output (regenerate locally with `sushi .`)
+TIDE-IG/fsh-generated/
+
+# Submission docs (frozen JMIR submission materials, not part of the public IG/code)
+docs/
+
+# Raw BIDS/EDF datasets (large; sourced from OpenNeuro, not redistributed here)
+data/
+
+# Runtime artifacts produced by running scripts/ locally
+results/
+scripts/processed_files.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

@@ -15,9 +15,9 @@ the implementation guide referenced there.
 
 | Path | Contents |
 |---|---|
-| `TIDE-IG/` | Buildable FHIR Implementation Guide (SUSHI project: `sushi-config.yaml`, `input/fsh/`, `input/pagecontent/`) |
-| `profiles/` | FHIR Shorthand (FSH) source for all profiles, extensions, and terminology, mirrored into `TIDE-IG/input/fsh/` |
+| `TIDE-IG/` | Buildable FHIR Implementation Guide (SUSHI project: `sushi-config.yaml`, `input/fsh/`, `input/pagecontent/`) — sole source for all profiles, extensions, and terminology |
 | `scripts/` | Evaluation pipeline: EDF/BIDS ingestion, FHIR resource construction, precision/recall evaluation against the two datasets below |
+| `tide_evaluation_bundle.html` | FHIR transaction Bundle containing all resources produced during the proof-of-concept evaluation, for direct inspection or loading into an independent FHIR R4 server |
 
 ## TIDE artifacts
 
@@ -52,7 +52,7 @@ the [FHIR IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Doc
 ## Running the evaluation pipeline
 
 ```
-docker-compose up -d          # starts a local Blaze FHIR server on :8080
+# start any local FHIR R4 server (e.g. Blaze: https://github.com/samply/blaze) on :8080
 pip install mne numpy scipy pandas requests
 python scripts/tide_pipeline.py       # flat model (ds007808)
 python scripts/tide_pipeline_v2.py    # hierarchical model (ds007823)

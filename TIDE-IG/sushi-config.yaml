@@ -1,0 +1,74 @@
+id: tide.fhir.ig
+canonical: http://example.org/tide
+name: TIDEImplementationGuide
+title: "TIDE - Time Series Integration and Data in Endpoints"
+description: >
+  TIDE (Time Series Integration and Data in Endpoints) is a FHIR R4 Implementation
+  Guide for representing continuous high-resolution time series data (e.g., EEG,
+  ECG, waveform monitoring) using a Metadata-Proxy pattern: structured analytical
+  metadata is carried in FHIR Observation resources, while the underlying raw
+  signal data is referenced externally through TIDEEndpoint resources. TIDE
+  supports both a flat single-Observation model and a hierarchical parent/child
+  model (via TIDEObservationChild and hasMember) for multi-channel recordings.
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+license: CC0-1.0
+copyrightYear: 2026+
+releaseLabel: ci-build
+
+# Placeholder canonical/publication URLs. To be updated to the final published
+# URLs upon acceptance of the associated manuscript, per the note in Appendix 2.
+publisher:
+  name: University Medicine Essen
+  url: https://github.com/UMEssen/TIDE
+
+contact:
+  - name: University Medicine Essen
+    telecom:
+      - system: url
+        value: https://github.com/UMEssen/TIDE
+
+jurisdiction: urn:iso:std:iso:3166#001 "World"
+
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
+
+pages:
+  index.md:
+    title: Home
+
+parameters:
+  show-inherited-invariants: false
+
+menu:
+  Home: index.html
+  Artifacts:
+    Profiles: artifacts.html#structures-resource
+    Extensions: artifacts.html#structures-extensions
+    Terminology: artifacts.html#terminology-value-sets
+  Downloads: downloads.html
+
+resources:
+  StructureDefinition/tide-observation:
+    description: "Parent Observation profile; used standalone (flat model) or as the parent of TIDEObservationChild resources (hierarchical model)."
+  StructureDefinition/tide-observation-child:
+    description: "Per-channel child Observation profile for the hierarchical parent/child model."
+  StructureDefinition/tide-endpoint:
+    description: "Endpoint profile describing an external raw time series data access point."
+  StructureDefinition/tide-rawdata-endpoint:
+    description: "Extension referencing the mandatory raw data TIDEEndpoint."
+  StructureDefinition/tide-preview-endpoint:
+    description: "Extension referencing an optional preview/thumbnail TIDEEndpoint."
+  CodeSystem/tide-code-system:
+    description: "Analytical/statistical metric codes used as Observation component codes."
+  CodeSystem/tide-supplemental-codes:
+    description: "Supplemental continuous waveform modality codes not covered by LOINC/SNOMED CT."
+  CodeSystem/tide-channel-code-system:
+    description: "Channel/electrode identity codes for the hierarchical model's bodySite element."
+  ValueSet/tide-value-set:
+    description: "Modality value set for Observation.code."
+  ValueSet/tide-channel-value-set:
+    description: "Channel/electrode identity value set for TIDEObservationChild.bodySite."
+  SearchParameter/tide-observation-bodysite:
+    description: "Custom search parameter enabling queries on TIDEObservationChild.bodySite."
