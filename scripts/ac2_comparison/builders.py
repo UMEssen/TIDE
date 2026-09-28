@@ -32,7 +32,7 @@ def _device_resource(sidecar: dict):
         "manufacturer": sidecar.get("Manufacturer", "Unknown Manufacturer"),
         "deviceName": [{"name": sidecar.get("ManufacturersModelName", "Unknown Model"),
                          "type": "user-friendly-name"}],
-        "type": {"coding": [{"system": "http://snomed.info/sct", "code": "38531001",
+        "type": {"coding": [{"system": "http://snomed.info/sct", "code": "468441005",
                               "display": "Electroencephalograph"}]},
     }
 

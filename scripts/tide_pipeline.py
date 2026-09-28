@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-TIDE pipeline: discovers all BIDS EDF files under data/, computes all 16 TIDE slices,
+TIDE pipeline: discovers all BIDS EDF files under data/ds007808/, computes all 16 TIDE slices,
 and pushes Patient / Device / Endpoint / TIDEObservation resources to Blaze FHIR.
 """
 import json
@@ -269,7 +269,7 @@ def create_device(sidecar: dict):
         "type": {
             "coding": [{
                 "system": "http://snomed.info/sct",
-                "code": "38531001",
+                "code": "468441005",
                 "display": "Electroencephalograph",
             }]
         },
@@ -412,7 +412,7 @@ def build_observation(
 
 # pipeline
 def find_edf_files():
-    return sorted(DATA_DIR.rglob("*.edf"))
+    return sorted((DATA_DIR / "ds007808").rglob("*.edf"))
 
 
 def parse_bids(path: Path):

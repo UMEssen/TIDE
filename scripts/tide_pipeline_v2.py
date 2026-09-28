@@ -326,7 +326,7 @@ def create_device(sidecar: dict):
         "deviceName":   [{"name": model, "type": "user-friendly-name"}],
         "type": {"coding": [{
             "system":  "http://snomed.info/sct",
-            "code":    "38531001",
+            "code":    "468441005",
             "display": "Electroencephalograph",
         }]},
     }
