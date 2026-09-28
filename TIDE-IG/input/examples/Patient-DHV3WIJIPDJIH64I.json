@@ -1,0 +1,14 @@
+{
+  "resourceType": "Patient",
+  "id": "DHV3WIJIPDJIH64I",
+  "meta": {
+    "versionId": "85",
+    "lastUpdated": "2026-06-12T11:57:50.092Z"
+  },
+  "identifier": [
+    {
+      "system": "urn:tide:bids:subject",
+      "value": "sub-CUCOV003"
+    }
+  ]
+}

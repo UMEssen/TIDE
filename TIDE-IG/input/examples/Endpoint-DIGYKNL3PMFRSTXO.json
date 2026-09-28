@@ -1,0 +1,30 @@
+{
+  "resourceType": "Endpoint",
+  "id": "DIGYKNL3PMFRSTXO",
+  "meta": {
+    "versionId": "1628",
+    "lastUpdated": "2026-09-25T11:28:55.737Z",
+    "profile": [
+      "http://example.org/tide/StructureDefinition/tide-endpoint"
+    ]
+  },
+  "status": "active",
+  "connectionType": {
+    "system": "http://example.org/tide/CodeSystem/tide-connection-type-codes",
+    "code": "direct-https"
+  },
+  "payloadType": [
+    {
+      "coding": [
+        {
+          "system": "http://example.org/tide/CodeSystem/tide-supplemental-codes",
+          "code": "eegWaveform"
+        }
+      ]
+    }
+  ],
+  "payloadMimeType": [
+    "application/edf"
+  ],
+  "address": "https://s3.amazonaws.com/openneuro.org/ds007823/sub-CUCOV003/eeg/sub-CUCOV003_task-COVID_eeg.edf"
+}

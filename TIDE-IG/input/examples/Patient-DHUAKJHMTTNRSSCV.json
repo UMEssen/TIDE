@@ -1,0 +1,14 @@
+{
+  "resourceType": "Patient",
+  "id": "DHUAKJHMTTNRSSCV",
+  "meta": {
+    "versionId": "24",
+    "lastUpdated": "2026-05-31T23:15:38.316Z"
+  },
+  "identifier": [
+    {
+      "system": "urn:tide:bids:subject",
+      "value": "sub-03"
+    }
+  ]
+}

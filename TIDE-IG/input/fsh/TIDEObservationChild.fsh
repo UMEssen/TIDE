@@ -59,7 +59,7 @@ Description: "Per-channel child Observation in the TIDE hierarchical parent/chil
     signalMin 0..1 and
     signalMax 0..1 and
     signalStdDev 0..1 and
-    snr 0..1 and
+    signalStabilityIndex 0..1 and
     dominantFrequency 0..1 and
     trendSlope 0..1 and
     signalEntropy 0..1 and
@@ -70,7 +70,7 @@ Description: "Per-channel child Observation in the TIDE hierarchical parent/chil
 * component[signalMin].code = http://example.org/tide/CodeSystem/tide-code-system#signalMin
 * component[signalMax].code = http://example.org/tide/CodeSystem/tide-code-system#signalMax
 * component[signalStdDev].code = http://example.org/tide/CodeSystem/tide-code-system#signalStdDev
-* component[snr].code = http://example.org/tide/CodeSystem/tide-code-system#snr
+* component[signalStabilityIndex].code = http://example.org/tide/CodeSystem/tide-code-system#signalStabilityIndex
 * component[dominantFrequency].code = http://example.org/tide/CodeSystem/tide-code-system#dominantFrequency
 * component[trendSlope].code = http://example.org/tide/CodeSystem/tide-code-system#trendSlope
 * component[signalEntropy].code = http://example.org/tide/CodeSystem/tide-code-system#signalEntropy
@@ -81,7 +81,7 @@ Description: "Per-channel child Observation in the TIDE hierarchical parent/chil
 * component[signalMin].value[x] only Quantity
 * component[signalMax].value[x] only Quantity
 * component[signalStdDev].value[x] only Quantity
-* component[snr].value[x] only Quantity
+* component[signalStabilityIndex].value[x] only Quantity
 * component[dominantFrequency].value[x] only Quantity
 * component[trendSlope].value[x] only Quantity
 * component[signalEntropy].value[x] only Quantity

@@ -1,0 +1,24 @@
+{
+  "resourceType": "Device",
+  "id": "DIGYKNL24KC3GARU",
+  "meta": {
+    "versionId": "1627",
+    "lastUpdated": "2026-09-25T11:28:55.728Z"
+  },
+  "manufacturer": "Unknown Manufacturer",
+  "deviceName": [
+    {
+      "name": "Unknown Model",
+      "type": "user-friendly-name"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "38531001",
+        "display": "Electroencephalograph"
+      }
+    ]
+  }
+}

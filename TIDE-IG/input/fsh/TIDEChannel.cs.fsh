@@ -44,4 +44,4 @@ Description: "Codes for channel/electrode identity used in the bodySite element 
 * #Pg2 "Pg2" "Right nasopharyngeal electrode position from the extended 10-20 nomenclature, used in some clinical epilepsy/sleep montages."
 
 // Fallback (1)
-* #non-standard-channel "Non-standard channel" "Used when a channel label does not map to a recognized electrode position (e.g., generic or anonymized labels such as EEG001); the original label is preserved in bodySite.text."
+* #non-standard-channel "Non-standard or unlabeled channel" "Used when a channel label does not map to a recognized electrode position (e.g., generic or anonymized labels such as EEG001); the original label is preserved in bodySite.text."

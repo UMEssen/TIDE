@@ -17,8 +17,8 @@ license: CC0-1.0
 copyrightYear: 2026+
 releaseLabel: ci-build
 
-# Placeholder canonical/publication URLs. To be updated to the final published
-# URLs upon acceptance of the associated manuscript, per the note in Appendix 2.
+# Placeholder canonical URLs (http://example.org/tide). To be replaced with the
+# final canonical namespace upon formal publication of the Implementation Guide.
 publisher:
   name: University Medicine Essen
   url: https://github.com/UMEssen/TIDE
@@ -31,9 +31,6 @@ contact:
 
 jurisdiction: urn:iso:std:iso:3166#001 "World"
 
-dependencies:
-  hl7.fhir.r4.core: 4.0.1
-
 pages:
   index.md:
     title: Home
@@ -43,11 +40,7 @@ parameters:
 
 menu:
   Home: index.html
-  Artifacts:
-    Profiles: artifacts.html#structures-resource
-    Extensions: artifacts.html#structures-extensions
-    Terminology: artifacts.html#terminology-value-sets
-  Downloads: downloads.html
+  Artifacts: artifacts.html
 
 resources:
   StructureDefinition/tide-observation:

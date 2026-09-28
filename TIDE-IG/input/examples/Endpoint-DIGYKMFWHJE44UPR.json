@@ -1,0 +1,30 @@
+{
+  "resourceType": "Endpoint",
+  "id": "DIGYKMFWHJE44UPR",
+  "meta": {
+    "versionId": "1625",
+    "lastUpdated": "2026-09-25T11:28:36.197Z",
+    "profile": [
+      "http://example.org/tide/StructureDefinition/tide-endpoint"
+    ]
+  },
+  "status": "active",
+  "connectionType": {
+    "system": "http://example.org/tide/CodeSystem/tide-connection-type-codes",
+    "code": "direct-https"
+  },
+  "payloadType": [
+    {
+      "coding": [
+        {
+          "system": "http://example.org/tide/CodeSystem/tide-supplemental-codes",
+          "code": "eegWaveform"
+        }
+      ]
+    }
+  ],
+  "payloadMimeType": [
+    "application/edf"
+  ],
+  "address": "https://s3.amazonaws.com/openneuro.org/ds007808/sub-03/ses-20240821/eeg/sub-03_ses-20240821_task-speechopen_acq-pangolin_run-02_eeg.edf"
+}

@@ -68,7 +68,7 @@ Description: "Modality-agnostic TIDE (Time Series Integration and Data in Endpoi
     dataCoverage 0..1 and
     dataGaps 0..* and
     samplingJitter 0..* and
-    snr 0..* and
+    signalStabilityIndex 0..* and
     dominantFrequency 0..* and
     trendSlope 0..* and
     signalEntropy 0..*
@@ -89,7 +89,7 @@ Description: "Modality-agnostic TIDE (Time Series Integration and Data in Endpoi
 * component[dataCoverage].code      = http://example.org/tide/CodeSystem/tide-code-system#dataCoverage
 * component[dataGaps].code          = http://example.org/tide/CodeSystem/tide-code-system#dataGaps
 * component[samplingJitter].code    = http://example.org/tide/CodeSystem/tide-code-system#samplingJitter
-* component[snr].code               = http://example.org/tide/CodeSystem/tide-code-system#snr
+* component[signalStabilityIndex].code = http://example.org/tide/CodeSystem/tide-code-system#signalStabilityIndex
 * component[dominantFrequency].code = http://example.org/tide/CodeSystem/tide-code-system#dominantFrequency
 * component[trendSlope].code        = http://example.org/tide/CodeSystem/tide-code-system#trendSlope
 * component[signalEntropy].code     = http://example.org/tide/CodeSystem/tide-code-system#signalEntropy
@@ -134,9 +134,9 @@ Description: "Modality-agnostic TIDE (Time Series Integration and Data in Endpoi
 * component[samplingJitter].valueQuantity = http://unitsofmeasure.org#ms "ms"
 * component[samplingJitter] ^short = "Standard deviation of sampling intervals (ms)."
 
-* component[snr].value[x] only Quantity
-* component[snr].valueQuantity = http://unitsofmeasure.org#dB "dB"
-* component[snr] ^short = "Signal-to-Noise Ratio (dB)."
+* component[signalStabilityIndex].value[x] only Quantity
+* component[signalStabilityIndex].valueQuantity = http://unitsofmeasure.org#dB "dB"
+* component[signalStabilityIndex] ^short = "Signal Stability Index: amplitude stability as 20*log10(|mean|/SD) (dB)"
 
 * component[dominantFrequency].value[x] only Quantity
 * component[dominantFrequency].valueQuantity = http://unitsofmeasure.org#Hz "Hz"

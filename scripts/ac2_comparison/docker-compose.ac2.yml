@@ -1,0 +1,16 @@
+version: "3.8"
+# Isolated Blaze instance for AC2 benchmarking only.
+# Separate port + separate volume from the main docker-compose.yml so that
+# ingestion/query timing is never skewed by the 83 pre-existing TIDE resources.
+services:
+  blaze-ac2:
+    image: samply/blaze:1.7.0
+    ports:
+      - "8081:8080"
+    environment:
+      BASE_URL: "http://localhost:8081"
+    volumes:
+      - blaze-ac2-data:/app/data
+
+volumes:
+  blaze-ac2-data:

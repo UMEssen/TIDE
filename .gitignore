@@ -1,8 +1,12 @@
 # OS
 .DS_Store
 
-# TIDE-IG SUSHI build output (regenerate locally with `sushi .`)
+# TIDE-IG SUSHI / IG Publisher build output (regenerate locally, see README)
 TIDE-IG/fsh-generated/
+TIDE-IG/output/
+TIDE-IG/input-cache/
+TIDE-IG/temp/
+TIDE-IG/template/
 
 # Submission docs (frozen JMIR submission materials, not part of the public IG/code)
 docs/
@@ -12,7 +16,8 @@ data/
 
 # Runtime artifacts produced by running scripts/ locally
 results/
-scripts/processed_files.json
+processed_files*.json
+scripts/processed_files*.json
 
 # Python
 __pycache__/

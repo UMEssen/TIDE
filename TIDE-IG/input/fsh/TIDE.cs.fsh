@@ -50,8 +50,8 @@ Description: "A comprehensive vocabulary for describing technical characteristic
 * #samplingJitter "Sampling Jitter"
     "The standard deviation of the time intervals between successive samples. High jitter indicates timing instability in the acquisition device. May be specified globally or per channel. Repeatable."
 
-* #snr "Signal-to-Noise Ratio"
-    "A measure comparing the level of the desired signal to the level of background noise, typically expressed in decibels (dB). May be specified globally or per channel. Repeatable."
+* #signalStabilityIndex "Signal Stability Index"
+    "A coefficient-of-variation-style measure of amplitude stability, computed as 20*log10(|mean|/standard deviation) and expressed in decibels (dB). Not a classical signal-power/noise-floor SNR. May be specified globally or per channel. Repeatable."
 
 * #dominantFrequency "Dominant Frequency"
     "The frequency component with the highest power spectral density in the signal (e.g., Alpha peak in EEG). May be specified globally or per channel. Repeatable."

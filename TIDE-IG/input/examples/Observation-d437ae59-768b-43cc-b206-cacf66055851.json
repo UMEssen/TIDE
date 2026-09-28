@@ -1,0 +1,191 @@
+{
+  "resourceType": "Observation",
+  "id": "d437ae59-768b-43cc-b206-cacf66055851",
+  "meta": {
+    "versionId": "1702",
+    "lastUpdated": "2026-09-25T11:28:56.381Z",
+    "profile": [
+      "http://example.org/tide/StructureDefinition/tide-observation"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://example.org/tide/StructureDefinition/tide-rawdata-endpoint",
+      "valueReference": {
+        "reference": "Endpoint/DIGYKNM4AQMT7CHU"
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11523-8",
+        "display": "EEG study"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/DHV3WIKL4GZ4VIO2"
+  },
+  "effectivePeriod": {
+    "start": "2025-01-01T12:01:43Z",
+    "end": "2025-01-01T12:13:24.995Z"
+  },
+  "device": {
+    "reference": "Device/DIGYKNM3TFBD2YOK"
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/DIGYKNM4SIQHM7S3"
+    },
+    {
+      "reference": "Observation/DIGYKNM42N5UKVAP"
+    },
+    {
+      "reference": "Observation/DIGYKNM5G7ZM37FK"
+    },
+    {
+      "reference": "Observation/DIGYKNM5SEFRH2PG"
+    },
+    {
+      "reference": "Observation/DIGYKNM54MUEUHZI"
+    },
+    {
+      "reference": "Observation/DIGYKNM6IZ4M5ENV"
+    },
+    {
+      "reference": "Observation/DIGYKNM6TD3D6JNI"
+    },
+    {
+      "reference": "Observation/DIGYKNM65NMYDAY3"
+    },
+    {
+      "reference": "Observation/DIGYKNM7G4LSHDFM"
+    },
+    {
+      "reference": "Observation/DIGYKNM7R3I25YX3"
+    },
+    {
+      "reference": "Observation/DIGYKNM73YJK74PQ"
+    },
+    {
+      "reference": "Observation/DIGYKNNAJ7ZUUKQB"
+    },
+    {
+      "reference": "Observation/DIGYKNNAURJXVWRT"
+    },
+    {
+      "reference": "Observation/DIGYKNNA6SQKPNWY"
+    },
+    {
+      "reference": "Observation/DIGYKNNBNDZDZM3S"
+    },
+    {
+      "reference": "Observation/DIGYKNNBW5F76XAY"
+    },
+    {
+      "reference": "Observation/DIGYKNNCBLBVDMIN"
+    },
+    {
+      "reference": "Observation/DIGYKNNCJLD2TKZQ"
+    },
+    {
+      "reference": "Observation/DIGYKNNCRPEQP2RI"
+    },
+    {
+      "reference": "Observation/DIGYKNNC4PJLNE3I"
+    },
+    {
+      "reference": "Observation/DIGYKNNDHLFZ5HR4"
+    },
+    {
+      "reference": "Observation/DIGYKNNDRWTVDQ75"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "samplingFrequency",
+            "display": "Sampling Frequency"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 200.0,
+        "unit": "Hz",
+        "system": "http://unitsofmeasure.org",
+        "code": "Hz"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "sampleCount",
+            "display": "Sample Count"
+          }
+        ]
+      },
+      "valueInteger": 140400
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "channelCount",
+            "display": "Channel Count"
+          }
+        ]
+      },
+      "valueInteger": 22
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "dataCoverage",
+            "display": "Data Coverage"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 100.0,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "dataGaps",
+            "display": "Data Gap Count"
+          }
+        ]
+      },
+      "valueInteger": 0
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "eventCount",
+            "display": "Physiological Event Count"
+          }
+        ]
+      },
+      "valueInteger": 12
+    }
+  ]
+}

@@ -23,7 +23,7 @@ Description: "Supplemental modality codes for continuous high-resolution wavefor
 * #arterialBloodPressureWaveform "Arterial blood pressure waveform"
   "Continuous arterial blood pressure waveform (high-resolution), e.g., invasive arterial line pressure signal."
 
-// Note: EEG endpoints are represented via LOINC 11523-8 ("EEG study") as the
-// payloadType, not via a dedicated waveform code in this CodeSystem.
+* #eegWaveform "EEG waveform"
+  "Continuous electroencephalogram waveform (high-resolution)."
 
 // open to additions

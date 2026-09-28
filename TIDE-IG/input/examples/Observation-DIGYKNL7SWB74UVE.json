@@ -1,0 +1,217 @@
+{
+  "resourceType": "Observation",
+  "id": "DIGYKNL7SWB74UVE",
+  "meta": {
+    "versionId": "1639",
+    "lastUpdated": "2026-09-25T11:28:55.802Z",
+    "profile": [
+      "http://example.org/tide/StructureDefinition/tide-observation-child"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11523-8",
+        "display": "EEG study"
+      }
+    ],
+    "text": "EEG study"
+  },
+  "subject": {
+    "reference": "Patient/DHV3WIJIPDJIH64I"
+  },
+  "effectivePeriod": {
+    "start": "2026-01-01T12:41:55Z",
+    "end": "2026-01-01T12:55:24.995Z"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://example.org/tide/CodeSystem/tide-channel-code-system",
+        "code": "O2",
+        "display": "O2"
+      }
+    ],
+    "text": "O2"
+  },
+  "method": {
+    "text": "TIDE analytical metrics computed via compute_slices() (numpy/scipy Welch PSD, MNE-based EEG preprocessing)."
+  },
+  "device": {
+    "reference": "Device/DIGYKNL24KC3GARU"
+  },
+  "derivedFrom": [
+    {
+      "reference": "Observation/e00b6a90-a1b9-4320-b79c-37bdab122b90"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "signalMean",
+            "display": "Signal mean"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": -34.818097,
+        "unit": "uV",
+        "system": "http://unitsofmeasure.org",
+        "code": "uV"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "signalMin",
+            "display": "Signal Minimum"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": -132.130453,
+        "unit": "uV",
+        "system": "http://unitsofmeasure.org",
+        "code": "uV"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "signalMax",
+            "display": "Signal Maximum"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 54.233241,
+        "unit": "uV",
+        "system": "http://unitsofmeasure.org",
+        "code": "uV"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "signalStdDev",
+            "display": "Signal Standard Deviation"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 24.659483,
+        "unit": "uV",
+        "system": "http://unitsofmeasure.org",
+        "code": "uV"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "signalStabilityIndex",
+            "display": "Signal Stability Index"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2.9964,
+        "unit": "dB",
+        "system": "http://unitsofmeasure.org",
+        "code": "dB"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "dominantFrequency",
+            "display": "Dominant Frequency"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 60.0586,
+        "unit": "Hz",
+        "system": "http://unitsofmeasure.org",
+        "code": "Hz"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "trendSlope",
+            "display": "Signal Trend Slope"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 9.6e-05,
+        "unit": "uV/s",
+        "system": "http://unitsofmeasure.org",
+        "code": "uV/s"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "signalEntropy",
+            "display": "Signal Entropy"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 5.709608,
+        "unit": "bit",
+        "system": "http://unitsofmeasure.org",
+        "code": "bit"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "samplingJitter",
+            "display": "Sampling Jitter"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.0,
+        "unit": "ms",
+        "system": "http://unitsofmeasure.org",
+        "code": "ms"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/tide/CodeSystem/tide-code-system",
+            "code": "anomalyCount",
+            "display": "Technical Anomaly Count"
+          }
+        ]
+      },
+      "valueInteger": 52
+    }
+  ]
+}
