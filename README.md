@@ -128,7 +128,7 @@ University Hospital Essen<br>
 Hufelandstraße 55, 45147 Essen<br>
 [yutong.wen@uk-essen.de](mailto:yutong.wen@uk-essen.de)
 
-Sara Erma Kaya M. Sc.
+Sara Erma Kaya M. Sc.<br> 
 University Hospital Essen<br>
 Hufelandstraße 55, 45147 Essen<br>
 [sara.kaya@uk-essen.de](mailto:sara.kaya@uk-essen.de)
