@@ -2,7 +2,7 @@
   <img src="TIDE.png" alt="TIDE: An implementation of FHIR profiles for interoperable time series integration" width="100%">
 </p>
 
-# TIDE <br> Time Series Integration and Data in Endpoints
+# TIDE - Time Series Integration and Data in Endpoints
 
 TIDE is a FHIR R4 Implementation Guide for representing continuous high-resolution
 time series data (e.g., EEG, ECG, waveform monitoring) using a Metadata-Proxy
