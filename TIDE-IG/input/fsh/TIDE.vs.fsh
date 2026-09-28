@@ -21,7 +21,7 @@ Description: "Representative starter set of modality codes from LOINC, SNOMED CT
 
 // Cardiology
 * include http://loinc.org#11524-6 "ECG study"
-* include http://snomed.info/sct#3266706003 "Continuous electrocardiogram monitoring"
+* include http://snomed.info/sct#266706003 "Continuous electrocardiogram monitoring"
 * include http://loinc.org#80404-7 "R-R interval; standard deviation (heart rate variability)" 
 
 // Pressure/Flow 
