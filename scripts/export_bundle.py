@@ -130,7 +130,6 @@ def build_bundle(all_resources: dict) -> dict:
                 "display": BUNDLE_TAG_DISPLAY,
             }]
         },
-        "total": len(entries),
         "entry": entries,
     }
 
