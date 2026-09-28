@@ -51,19 +51,22 @@ the implementation guide referenced there.
 ```
 cd TIDE-IG
 sushi build .                                          # FSH -> FHIR JSON (fsh-generated/)
-java -jar publisher.jar -ig . -no-sushi -tx n/a        # full HTML rendering (output/)
+java -jar publisher.jar -ig . -no-sushi                # full HTML rendering (output/)
 ```
 
 Requires [SUSHI](https://fshschool.org/docs/sushi/) and, for the full HTML rendering,
 the [FHIR IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation)
-(Java 17+). `-tx n/a` runs the build without an external terminology server; omit it to
-validate against tx.fhir.org.
+(Java 17+). The build validates all SNOMED CT and LOINC codes against tx.fhir.org; add
+`-tx n/a` only for offline builds, in which case external codes are not checked.
 
 ## Running the evaluation pipeline
 
 ```
-# 1. start any local FHIR R4 server on :8080, e.g. Blaze (https://github.com/samply/blaze):
-docker run -d -p 8080:8080 samply/blaze:latest
+# 1. start Blaze (https://github.com/samply/blaze) on :8080 with the custom bodysite SearchParameter:
+docker run -d -p 8080:8080 \
+  -e DB_SEARCH_PARAM_BUNDLE=/app/tide-search-params.json \
+  -v "$(pwd)/scripts/tide-search-params.json:/app/tide-search-params.json:ro" \
+  samply/blaze:1.7.0
 pip install mne numpy scipy pandas requests
 
 # 2. place the two OpenNeuro datasets under data/ (see "Data" below), then:
@@ -82,6 +85,11 @@ python scripts/ac2_comparison/benchmark.py
 ```
 
 Outputs are written to `results/` (examples for the IG to `TIDE-IG/input/examples/`).
+
+`scripts/tide-search-params.json` registers the `bodysite` SearchParameter
+(`tide-observation-bodysite`) in Blaze. It must be configured before any data is loaded.
+Without it, Blaze ignores the unknown `bodysite` parameter and the channel-level query
+returns all Observations instead of the per-channel matches.
 
 ## Data
 
