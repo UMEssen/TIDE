@@ -7,5 +7,7 @@ Description: "Reference to a FHIR Endpoint resource pointing to raw time-series 
 
 * ^context.type = #element
 * ^context.expression = "Observation"
+* ^status = #active
+* ^experimental = true
 
 * value[x] only Reference(TIDEEndpoint) 

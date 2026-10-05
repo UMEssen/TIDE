@@ -7,6 +7,8 @@ Description: "Reference to an external Endpoint to show preview via a Middleware
 
 * ^context.type = #element
 * ^context.expression = "Observation"
+* ^status = #active
+* ^experimental = true
 
 * value[x] only Reference(TIDEEndpoint)
 
