@@ -11,7 +11,7 @@ description: >
   supports both a flat single-Observation model and a hierarchical parent/child
   model (via TIDEObservationChild and hasMember) for multi-channel recordings.
 status: draft
-version: 0.1.0
+version: 0.1.2
 fhirVersion: 4.0.1
 license: CC0-1.0
 copyrightYear: 2026+
@@ -29,7 +29,7 @@ contact:
       - system: url
         value: https://github.com/UMEssen/TIDE
 
-jurisdiction: urn:iso:std:iso:3166#001 "World"
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 
 pages:
   index.md:

@@ -8,6 +8,6 @@ Description: "Value set of channel/electrode identity codes, used to bind the
 * ^url = "http://example.org/tide/ValueSet/tide-channel-value-set"
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 * include codes from system http://example.org/tide/CodeSystem/tide-channel-code-system

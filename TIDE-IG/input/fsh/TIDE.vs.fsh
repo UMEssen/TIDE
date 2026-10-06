@@ -8,7 +8,7 @@ Description: "Representative starter set of modality codes from LOINC, SNOMED CT
 * ^url = "http://example.org/tide/ValueSet/tide-value-set" 
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 // Supplemental continuous waveform modalities (for gaps in standard terminologies)
 * include codes from system http://example.org/tide/CodeSystem/tide-supplemental-codes

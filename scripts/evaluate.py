@@ -8,7 +8,7 @@ ds007808 (tide_pipeline.py, flat model):
   model where all 16 slices (global + per-channel) live as components of one resource.
 
 ds007823 (tide_pipeline_v2.py, hierarchical model):
-  3 subjects, 1 EDF each, 200 Hz, 21-22 named 10-10 channels.
+  3 subjects, 1 EDF each, 200 Hz, 21-22 named 10-20 channels.
   Purpose: demonstrates the hierarchical parent/child Observation model with
   clinically meaningful electrode names (Fp1, Cz, T3…).  Per-channel metrics
   become independently searchable FHIR resources.
@@ -477,7 +477,7 @@ def generate_report(
         "| --- | --- | --- | --- | --- |",
         "| ds007808 (OpenNeuro) | tide_pipeline.py | 1200 Hz | 128 (generic labels) "
         "| Flat: all 16 slices as components of one Observation |",
-        "| ds007823 (OpenNeuro) | tide_pipeline_v2.py | 200 Hz | 21-22 (10-10 names) "
+        "| ds007823 (OpenNeuro) | tide_pipeline_v2.py | 200 Hz | 21-22 (10-20 names) "
         "| Hierarchical: parent Observation + N child Observations via hasMember |",
         "",
         "ds007808 demonstrates TIDE's scalability at high sampling frequency. "

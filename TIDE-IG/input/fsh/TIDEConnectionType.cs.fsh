@@ -10,7 +10,7 @@ Description: "Supplemental Endpoint.connectionType codes for access methods not 
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 * #direct-https "Direct HTTPS file retrieval"
   "Direct retrieval of a static file via HTTPS GET, without a dedicated messaging, query,

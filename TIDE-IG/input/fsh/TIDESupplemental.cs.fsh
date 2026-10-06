@@ -9,7 +9,7 @@ Description: "Supplemental modality codes for continuous high-resolution wavefor
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 * #airwayPressureWaveform "Airway pressure waveform"
   "Continuous airway pressure waveform (high-resolution)."

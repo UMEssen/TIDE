@@ -8,7 +8,7 @@ Description: "Standardized Endpoint profile for the TIDE Observation
 * ^url = "http://example.org/tide/StructureDefinition/tide-endpoint"
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 * status 1..1 MS
 * connectionType 1..1 MS

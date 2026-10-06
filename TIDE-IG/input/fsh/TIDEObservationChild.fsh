@@ -11,7 +11,7 @@ Description: "Per-channel child Observation in the TIDE hierarchical parent/chil
 * ^url = "http://example.org/tide/StructureDefinition/tide-observation-child"
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)

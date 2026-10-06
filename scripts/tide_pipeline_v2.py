@@ -7,7 +7,7 @@ Dataset: OpenNeuro ds007823 (COVID-19 EEG, 3 subjects, 21-22 EEG channels, 200 H
 Two-dataset evaluation strategy
 ds007808 (tide_pipeline.py):  1200 Hz, 128 channels — demonstrates high-frequency
                                scalability of the flat TIDE Observation model.
-ds007823 (tide_pipeline_v2.py):         200 Hz, 21-22 named 10-10 channels — demonstrates the
+ds007823 (tide_pipeline_v2.py):         200 Hz, 21-22 named 10-20 channels — demonstrates the
                                hierarchical parent/child model with clinically
                                meaningful electrode names (Fp1, Cz, T3, etc.).
 

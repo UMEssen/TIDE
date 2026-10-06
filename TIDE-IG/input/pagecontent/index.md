@@ -8,8 +8,9 @@ externally through TIDEEndpoint resources.
 
 TIDE supports two representational models:
 
-- **Flat model**: a single TIDEObservation carries global, recording-level
-  component metrics.
+- **Flat model**: a single TIDEObservation carries all component slices of a recording: 
+  global acquisition parameters once, and per-channel metrics repeated for each channel, with
+  the source channel label in `component.code.text`.
 - **Hierarchical parent/child model**: a parent TIDEObservation references one
   TIDEObservationChild per recording channel via `hasMember`, with each child
   carrying per-channel metrics and its channel identity in `bodySite`.

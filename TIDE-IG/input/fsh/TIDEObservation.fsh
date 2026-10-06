@@ -8,7 +8,7 @@ Description: "Modality-agnostic TIDE (Time Series Integration and Data in Endpoi
 * ^url = "http://example.org/tide/StructureDefinition/tide-observation"
 * ^status = #active
 * ^experimental = true
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)

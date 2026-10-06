@@ -102,7 +102,7 @@ to `data/ds007808/` and `data/ds007823/` (e.g. with the
 | Dataset | Description | DOI |
 |---|---|---|
 | ds007808 | EEG-Speech Brain Decoding Dataset | [10.18112/openneuro.ds007808.v1.0.0](https://doi.org/10.18112/openneuro.ds007808.v1.0.0) |
-| ds007823 | COVID-19 survivors and close contacts EEG dataset | [10.18112/openneuro.ds007823.v1.0.1](https://doi.org/10.18112/openneuro.ds007823.v1.0.1) |
+| ds007823 | COVID-19 survivors and close contacts EEG dataset |[10.18112/openneuro.ds007823.v1.0.0](https://doi.org/10.18112/openneuro.ds007823.v1.0.0) |
 
 The evaluation reported in the manuscript used the following five recordings
 (the pipelines process every matching EDF file found under `data/`, so place only

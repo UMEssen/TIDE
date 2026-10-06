@@ -13,7 +13,7 @@ Description: "A comprehensive vocabulary for describing technical characteristic
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 
 * #samplingFrequency "Sampling frequency" 

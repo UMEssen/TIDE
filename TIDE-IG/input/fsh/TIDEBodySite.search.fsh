@@ -12,7 +12,7 @@ Description: "Enables searching TIDEObservationChild resources by channel/electr
 * name = "TIDEObservationBodySiteSearchParameter"
 * status = #active
 * experimental = true
-* version = "0.1.0"
+* version = "0.1.2"
 * description = "Enables searching TIDEObservationChild resources by channel/electrode identity via the bodySite element (e.g., Observation?bodysite=Fp1). bodySite is not a standard Observation search parameter in base FHIR R4; this custom SearchParameter registers it for the TIDE hierarchical model to support channel-specific queries."
 
 * base = #Observation

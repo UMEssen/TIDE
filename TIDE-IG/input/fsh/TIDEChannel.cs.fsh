@@ -13,7 +13,7 @@ Description: "Codes for channel/electrode identity used in the bodySite element 
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
-* ^version = "0.1.0"
+* ^version = "0.1.2"
 
 // Standard International 10-20 System positions (21)
 // Legacy labels T3/T4/T5/T6 correspond to modern equivalents T7/T8/P7/P8.

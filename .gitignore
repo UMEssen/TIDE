@@ -10,6 +10,7 @@ TIDE-IG/template/
 
 # Submission docs (frozen JMIR submission materials, not part of the public IG/code)
 docs/
+docs_R4/
 
 # Raw BIDS/EDF datasets (large; sourced from OpenNeuro, not redistributed here)
 data/
